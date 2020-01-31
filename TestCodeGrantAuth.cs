@@ -1,13 +1,13 @@
 #region NetFramework
-namespace WebApplication1.DocuSign.eSignature
+namespace DocuSign.eSignature
 {
-	usign System;
+	using System;
 	//TODO: add implementation.
 }
 #endregion
 
 #region NetCore
-namespace WebApplication1.DocuSign.eSignature
+namespace DocuSign.eSignature
 {
     using Microsoft.AspNetCore.Authentication;
     using Microsoft.AspNetCore.Authentication.Cookies;
@@ -232,7 +232,7 @@ namespace WebApplication1.DocuSign.eSignature
 }
 #endregion
 
-namespace WebApplication1.DocuSign.eSignature
+namespace DocuSign.eSignature
 {
     using System;
     public class Locals
