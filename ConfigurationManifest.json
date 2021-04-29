@@ -1,4 +1,4 @@
-﻿{
+{
   "authenticationTypes": [
     {
       "name": "AuthCodeGrant",
@@ -210,7 +210,7 @@
         }
       ],
       "scopes": [
-        "signature"
+          "signature"
       ]
     },
     {
@@ -223,15 +223,15 @@
         }
       ],
       "scopes": [
-        "dtr.rooms.read",
-        "dtr.rooms.write",
-        "dtr.documents.read",
-        "dtr.documents.write",
-        "dtr.profile.read",
-        "dtr.profile.write",
-        "dtr.company.read",
-        "dtr.company.write",
-        "room_forms"
+          "dtr.rooms.read",
+          "dtr.rooms.write",
+          "dtr.documents.read",
+          "dtr.documents.write",
+          "dtr.profile.read",
+          "dtr.profile.write",
+          "dtr.company.read",
+          "dtr.company.write",
+          "room_forms"
       ]
     },
     {
@@ -244,8 +244,8 @@
         }
       ],
       "scopes": [
-        "click.manage",
-        "click.send"
+          "click.manage",
+          "click.send"
       ]
     }
   ],
