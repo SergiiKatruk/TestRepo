@@ -208,10 +208,6 @@
     }
   ],
   "packages": [
-    {
-         "name":"docusign-esign",
-         "version":"5.9.0-rc1"
-      },
       {
          "name":"fs",
          "version":"0.0.1-security"
