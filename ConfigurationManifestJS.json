@@ -5,20 +5,20 @@
       "displayName": "Authorization Code Grant JS",
       "description": "Choose this option if each user who sends DocuSign envelopes using \nthe eSignature API will login to DocuSign during each session.",
       "shortDescription": "Users will login to DocuSign during each session to send envelopes to eSignature API",
-	 "sources":[
-		{
-		   "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/config/index.js",
-		   "folder":"DocuSign"
-		},
-		{
-		   "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/DSAuthCodeGrant.js",
-		   "folder":"DocuSign"
-		},
-		{
-		   "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/commonControllers.js",
-		   "folder":"DocuSign"
-		}
-	 ],
+   "sources":[
+    {
+       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/config/index.js",
+       "folder":"DocuSign"
+    },
+    {
+       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/DSAuthCodeGrant.js",
+       "folder":"DocuSign"
+    },
+    {
+       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/commonControllers.js",
+       "folder":"DocuSign"
+    }
+   ],
       "parameters": [
         {
           "key": "IntegrationKey",
@@ -105,19 +105,19 @@
       "displayName": "JSON Web Token (JWT) JS",
       "description": "Choose this option if a single login will be used to send all envelopes.",
        "sources":[
-		{
-		   "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/config/index.js",
-		   "folder":"DocuSign"
-		},
-		{
-		   "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/DSJwtAuth.js",
-		   "folder":"DocuSign"
-		},
-		{
-		   "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/commonControllers.js",
-		   "folder":"DocuSign"
-		}
-	 ],
+    {
+       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/config/index.js",
+       "folder":"DocuSign"
+    },
+    {
+       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/DSJwtAuth.js",
+       "folder":"DocuSign"
+    },
+    {
+       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/commonControllers.js",
+       "folder":"DocuSign"
+    }
+   ],
       "parameters": [
         {
           "key": "IntegrationKey",
@@ -231,8 +231,8 @@
       "displayName": "ESignature",
       "packages": [
         {
-          "name": "DocuSign.eSign.dll",
-          "version": "5.3.1-rc"
+          "name": "docusign-esign",
+          "version": "5.9.0"
         }
       ],
       "scopes": [
@@ -244,7 +244,7 @@
       "displayName": "Rooms",
       "packages": [
         {
-          "name": "DocuSign.Rooms",
+          "name": "docusign-rooms",
           "version": "1.0.0"
         }
       ],
@@ -265,7 +265,7 @@
       "displayName": "Click",
       "packages": [
         {
-          "name": "DocuSign.Click",
+          "name": "docusign-click",
           "version": "1.0.0"
         }
       ],
@@ -274,7 +274,7 @@
           "click.send"
       ]
     },
-	{
+  {
       "apiType": "Monitor",
       "displayName": "Monitor",
       "packages": [
