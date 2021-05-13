@@ -21,7 +21,7 @@
    ],
       "parameters": [
         {
-          "key": "IntegrationKey",
+          "key": "dsClientId",
           "inputType": "PlainText",
           "displayName": "Integration key",
           "placeHolder": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
@@ -35,22 +35,7 @@
           }
         },
         {
-          "key": "RedirectURI",
-          "inputType": "PlainText",
-          "contentType": "URI",
-          "displayName": "Redirect URI",
-          "placeHolder": "http://example.com",
-          "mandatory": true,
-          "validationRegEx": "",
-          "validationMessage": "A correct redirect URI should be a URI",
-          "help": {
-            "hint": "How to define a redirect URI?",
-            "displayText": "Learn more",
-            "URI": "https://developers.docusign.com/esign-rest-api/guides/authentication/oauth2-code-grant#prerequisites"
-          }
-        },
-        {
-          "key": "SecretKey",
+          "key": "dsClientSecret",
           "inputType": "PlainText",
           "displayName": "Secret key",
           "placeHolder": "",
@@ -63,33 +48,28 @@
           }
         },
         {
-          "key": "SignerName",
+          "key": "signerName",
           "placeHolder": "USER_FULLNAME",
           "displayInWizard": false
         },
         {
-          "key": "SignerEmail",
+          "key": "signerEmail",
           "placeHolder": "USER_EMAIL",
           "displayInWizard": false
         },
         {
-          "key": "AuthServer",
-          "defaultValue": "account-d.docusign.com",
+          "key": "roomsApiUrl",
+          "defaultValue": "https://demo.rooms.docusign.com",
           "displayInWizard": false
         },
         {
-          "key": "AuthorizationEndpoint",
-          "defaultValue": "https://account-d.docusign.com/oauth/auth",
+          "key": "clickAPIUrl",
+          "defaultValue": "https://demo.docusign.net/clickapi",
           "displayInWizard": false
         },
         {
-          "key": "TokenEndpoint",
-          "defaultValue": "https://account-d.docusign.com/oauth/token",
-          "displayInWizard": false
-        },
-        {
-          "key": "UserInformationEndpoint",
-          "defaultValue": "https://account-d.docusign.com/oauth/userinfo",
+          "key": "production",
+          "defaultValue": "false",
           "displayInWizard": false
         }
       ],
@@ -120,7 +100,7 @@
    ],
       "parameters": [
         {
-          "key": "IntegrationKey",
+          "key": "dsClientId",
           "inputType": "PlainText",
           "displayName": "Integration key",
           "placeHolder": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
@@ -134,7 +114,7 @@
           }
         },
         {
-          "key": "UserId",
+          "key": "impersonatedUserGuid",
           "inputType": "PlainText",
           "displayName": "DocuSign User ID",
           "placeHolder": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
@@ -148,54 +128,33 @@
           }
         },
         {
-          "key": "RSAKey",
-          "inputType": "MultiLineText",
-          "displayName": "RSA private key",
-          "contentType": "PEM",
-          "placeHolder": "",
-          "mandatory": true,
-          "defaultValue": "Specify here your private RSA key. See https://developers.docusign.com/esign-rest-api/guides/authentication/oauth2-jsonwebtoken for details.",
-          "validationRegEx": "",
-          "validationMessage": "A correct RSA private key should be a PEM-encoded certificate",
-          "help": {
-            "hint": "How do I get RSA private key?",
-            "displayText": "Learn more",
-            "URI": "https://developers.docusign.com/esign-rest-api/guides/authentication/oauth2-jsonwebtoken#prerequisites"
-          }
-        },
-        {
-          "key": "SignerName",
+          "key": "signerName",
           "placeHolder": "USER_FULLNAME",
           "displayInWizard": false
         },
         {
-          "key": "SignerEmail",
+          "key": "signerEmail",
           "placeHolder": "USER_EMAIL",
           "displayInWizard": false
         },
         {
-          "key": "AuthServer",
-          "defaultValue": "account-d.docusign.com",
+          "key": "roomsApiUrl",
+          "defaultValue": "https://demo.rooms.docusign.com",
           "displayInWizard": false
         },
         {
-          "key": "AuthorizationEndpoint",
-          "defaultValue": "https://account-d.docusign.com/oauth/auth",
+          "key": "clickAPIUrl",
+          "defaultValue": "https://demo.docusign.net/clickapi",
           "displayInWizard": false
         },
         {
-          "key": "TokenEndpoint",
-          "defaultValue": "https://account-d.docusign.com/oauth/token",
+          "key": "privateKeyLocation",
+          "defaultValue": "private.key",
           "displayInWizard": false
         },
         {
-          "key": "UserInformationEndpoint",
-          "defaultValue": "https://account-d.docusign.com/oauth/userinfo",
-          "displayInWizard": false
-        },
-        {
-          "key": "KeyFilePath",
-          "defaultValue": "docusign_private_key.txt",
+          "key": "production",
+          "defaultValue": "false",
           "displayInWizard": false
         }
       ],
@@ -219,6 +178,22 @@
       {
          "name":"passport",
          "version":"^0.4.0"
+      },
+      {
+         "name":"express-session",
+         "version":"^1.16.2"
+      },
+      {
+         "name":"express-flash",
+         "version":"0.0.2"
+      },
+      {
+         "name":"memorystore",
+         "version":"^1.6.1"
+      },
+      {
+         "name":"body-parser",
+         "version":"^1.19.0"
       }
   ],
   "supportedAPIs": [
