@@ -7,15 +7,11 @@
       "shortDescription": "Users will login to DocuSign during each session to send envelopes to eSignature API",
    "sources":[
     {
-       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/config/index.js",
+       "source":"https://raw.githubusercontent.com/SergiiKatruk/TestRepo/master/JS/DocuSign/config.js",
        "folder":"DocuSign"
     },
     {
-       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/DSAuthCodeGrant.js",
-       "folder":"DocuSign"
-    },
-    {
-       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/commonControllers.js",
+       "source":"https://raw.githubusercontent.com/SergiiKatruk/TestRepo/master/JS/DocuSign/DSAuthCodeGrant.js",
        "folder":"DocuSign"
     }
    ],
@@ -86,15 +82,11 @@
       "description": "Choose this option if a single login will be used to send all envelopes.",
        "sources":[
     {
-       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/config/index.js",
+       "source":"https://raw.githubusercontent.com/SergiiKatruk/TestRepo/master/JS/DocuSign/config.js",
        "folder":"DocuSign"
     },
     {
-       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/DSJwtAuth.js",
-       "folder":"DocuSign"
-    },
-    {
-       "source":"https://raw.githubusercontent.com/docusign/code-examples-node/master/lib/commonControllers.js",
+       "source":"https://raw.githubusercontent.com/SergiiKatruk/TestRepo/master/JS/DocuSign/DSJwtAuth.js",
        "folder":"DocuSign"
     }
    ],
